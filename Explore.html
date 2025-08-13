@@ -1,0 +1,683 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+  <meta charset="UTF-8" /> 
+  <meta name="viewport" content="width=device-width, 
+initial-scale=1.0"/> 
+  <title>Explore - Krubise Clothings</title> 
+  <link rel="stylesheet" href="myntra.css" /> 
+  <style> 
+    .product-grid { 
+      display: grid; 
+      grid-template-columns: repeat(auto-fit, 
+minmax(220px, 1fr)); 
+      gap: 20px; 
+      padding: 40px; 
+    } 
+ 
+    .product-card { 
+      border: 1px solid #eee; 
+      border-radius: 10px; 
+      overflow: hidden; 
+      text-align: center; 
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1); 
+      transition: transform 0.3s ease; 
+      background: #fff; 
+    } 
+ 
+    .product-card:hover { 
+      transform: translateY(-5px); 
+    } 
+ 
+    .product-card img { 
+      width: 100%; 
+      height: 250px; 
+      object-fit: cover; 
+    } 
+ 
+    .product-card h3 { 
+      margin: 15px 0 5px; 
+      font-size: 1.1em; 
+    } 
+ 
+    .product-card p { 
+      color: #777; 
+      font-size: 0.9em; 
+      margin-bottom: 10px; 
+    } 
+ 
+    .price { 
+      font-weight: bold; 
+      color: #e00f0f; 
+    } 
+ 
+    .tag { 
+      font-size: 0.8em; 
+      color: green; 
+      margin-bottom: 10px; 
+    } 
+  </style> 
+</head> 
+<body> 
+ 
+  <header> 
+     
+    <nav> 
+      <a href="myntra.html">Home</a> 
+      <a href="#men">Men</a> 
+      <a href="#wedding">Wedding</a> 
+      <a href="#women">Women</a> 
+      <a href="#accessories">Accessories</a> 
+      <a href="#kids">Kids</a> 
+      <a href="#contact">Contact</a> 
+    </nav> 
+  </header> 
+ 
+  <main> 
+    <h2 style="text-align:center; margin-top: 
+100px;">Explore Our Best Collections</h2> 
+    <div class="product-grid"> 
+ 
+      <!-- Product Card 1 --> 
+      <div class="product-card"> 
+        <img src="https://www.omsara.co.uk/wp
+content/uploads/IMG_2478.jpeg" alt="Saree"> 
+        <h3>Lycra Designer Saree</h3> 
+        <p class="price">₹20,589</p> 
+        <p class="tag">Free Delivery</p> 
+      </div> 
+ 
+      <!-- Product Card 2 --> 
+      <div class="product-card"> 
+        <img src="https://www.dorothyzudora.com/wp
+content/uploads/2021/05/Mens-60s-Retro-Mod-Short-Sleeve
+Button-Down-Shirt-Burning-Sands.jpg" alt="Men Shirt"> 
+        <h3>Men's Retro Shirt</h3> 
+        <p class="price">₹799</p> 
+        <p class="tag">Free Delivery</p> 
+      </div> 
+ 
+      <!-- Product Card 3 --> 
+      <div class="product-card"> 
+        <img src="https://images.unsplash.com/photo
+1542060748-10c28b62716f" alt="Kurti"> 
+        <h3>Tshirt</h3> 
+        <p class="price">₹577</p> 
+        <p class="tag">Free Delivery</p> 
+      </div> 
+ 
+      <!-- Product Card 4 --> 
+      <div class="product-card"> 
+        <img src="https://www.southjewellery.com/wp
+content/uploads/2019/11/bridal-wedding-diamond-necklace
+designs.jpg" alt="Necklace"> 
+        <h3>Bridal Necklace Set</h3> 
+        <p class="price">₹80999</p> 
+        <p class="tag">Free Delivery</p> 
+      </div> 
+ 
+      <!-- Product Card 5 --> 
+      <div class="product-card"> 
+        <img src="https://fantasticconcept.com/wp
+content/uploads/2020/02/kids-fashion-clothes-best-of
+today-in-awesome-tar-debuts-new-kids-clothing-line-of
+kids-fashion-clothes.jpg" alt="Kids Wear"> 
+        <h3>Kids Stylish Wear</h3> 
+        <p class="price">₹849</p> 
+        <p class="tag">Free Delivery</p> 
+      </div> 
+ 
+    </div> 
+  </main> 
+  <section id="men" class="men-section"> 
+    <div class="men-gallery"> 
+      <div class="men-gallery-row"> 
+        <div class="gallery-item"> 
+          <img 
+src="https://rukminim2.flixcart.com/image/832/832/xif0q/sh
+ irt/f/w/s/l-satin11-deemoon-original
+imah7ecyfgaqhegr.jpeg?q=70&crop=false" alt="Men Photo 1"> 
+          <div class="item-details"> 
+            <p class="item-name">Men Regular Fit Solid 
+Button Down Collar Formal Shirt</p> 
+            <p class="item-price">&#8377;445</p> 
+            <button class="like-btn">Like</button> 
+            <label><input type="checkbox" name="items" 
+data-name="Formal Shirt" data-price="445"> Formal 
+Shirt</label> 
+          </div> 
+        </div> 
+        <div class="gallery-item"> 
+          <img 
+src="https://rukminim2.flixcart.com/image/832/832/xif0q/sh
+ irt/b/i/i/4xl-formal-shirt-metronaut-original
+imah27td3xzegf9g.jpeg?q=70&crop=false" alt="Men Photo 2"> 
+ 
+          <div class="item-details"> 
+            <p class="item-name">Men Regular Fit Solid 
+Spread Collar Casual Shirt</p> 
+            <p class="item-price">&#8377;575</p> 
+            <button class="like-btn">Like</button> 
+            <label><input type="checkbox" 
+name="items"data-name="Formal Shirt" data-price="575"> 
+Formal Shirt</label> 
+          </div> 
+        </div> 
+        <div class="gallery-item"> 
+          <img 
+src="https://rukminim2.flixcart.com/image/832/832/xif0q/sh
+ irt/i/w/p/l-frml-st2-mayan-original
+imah8yb2dgztshzs.jpeg?q=70&crop=false" alt="Men Photo 3"> 
+          <div class="item-details"> 
+            <p class="item-name">Men Regular Fit Solid 
+Button Down Collar Formal Shirt</p> 
+            <p class="item-price">&#8377;578</p> 
+            <button class="like-btn">Like</button> 
+            <label><input type="checkbox" name="items" 
+data-name="Formal shirt" data-price="578"> Formal 
+Shirt</label> 
+          </div> 
+        </div> 
+      </div> 
+   
+      <div class="men-gallery-row"> 
+        <div class="gallery-item"> 
+          <img 
+src="https://rukminim2.flixcart.com/image/832/832/xif0q/sh
+ irt/v/m/b/xxl-frml-st2-mayan-original
+imah8yazbefuzpcg.jpeg?q=70&crop=false" alt="Men Photo 4"> 
+          <div class="item-details"> 
+            <p class="item-name">Men Regular Fit Solid 
+Button Down Collar Formal Shirt</p> 
+            <p class="item-price">&#8377;486</p> 
+            <button class="like-btn">Like</button> 
+            <label><input type="checkbox" name="items" 
+data-name="solid color formal" data-price="486"> Formal 
+Shirt</label> 
+          </div> 
+        </div> 
+        <div class="gallery-item"> 
+          <img 
+src="https://rukminim2.flixcart.com/image/832/832/xif0q/sh
+ irt/q/v/f/xxl-formal-shirt-orcus-original
+imah4h4yvhbghu4g.jpeg?q=70&crop=false" alt="Men Photo 5"> 
+          <div class="item-details"> 
+            <p class="item-name">Men Regular Fit Solid 
+Button Down Collar Formal Shirt</p> 
+            <p class="item-price">&#8377;686</p> 
+            <button class="like-btn">Like</button> 
+            <label><input type="checkbox" 
+name="items"data-name=" formal shirts" data-price="686"> 
+Formal Shirt</label> 
+          </div> 
+        </div> 
+         
+      </div> 
+    </div> 
+  </section> 
+  <section id="wedding" class="wedding-section"> 
+    <div class="wedding-gallery"> 
+      <div class="wedding-gallery-row"> 
+        <div class="gallery-item"> 
+          <img 
+src="https://rukminim2.flixcart.com/image/832/832/xif0q/go
+ wn/j/v/t/na-s-3-4-sleeve-stitched-m-2445-madhuram-na
+original-imaha24m89fejvkm.jpeg?q=70&crop=false" 
+alt="Wedding Dress 1"> 
+          <div class="item-details"> 
+            <p class="item-name">Embroidered Pure Silk 
+Stitched Anarkali Gown  (Maroon)</p> 
+            <p class="item-price">&#8377;1975</p> 
+            <button class="like-btn">Like</button> 
+            <label><input type="checkbox" name="items" 
+data-name="Pure Silk Stitched Anarkali Gown " data
+price="1975"> Wedding dress</label> 
+          </div> 
+        </div> 
+        <div class="gallery-item"> 
+          <img 
+src="https://rukminim2.flixcart.com/image/832/832/xif0q/et
+ hnic-set/u/z/n/xl-e6277-wedani-lifestyle-original
+imah4eggzkeqcjvg.jpeg?q=70&crop=false" alt="Wedding Dress 
+2"> 
+          <div class="item-details"> 
+            <p class="item-name">Embroidered Georgette 
+Stitched Anarkali Gown  (Green)</p> 
+            <p class="item-price">&#8377;2314</p> 
+            <button class="like-btn">Like</button> 
+            <label><input type="checkbox" name="items" 
+data-name="Embroidered Georgette Stitched Anarkali Gown " 
+data-price="2314">Wedding dress</label> 
+          </div> 
+        </div> 
+        <div class="gallery-item"> 
+          <img 
+src="https://rukminim2.flixcart.com/image/832/832/xif0q/go
+ wn/b/d/q/na-m-full-sleeve-semi-stitched-ad-dc-g38-wine-m
+mylofy-na-original-imahy9zhfqcpyzs3.jpeg?q=70&crop=false" 
+alt="Wedding Dress 3"> 
+          <div class="item-details"> 
+            <p class="item-name">Georgette Semi Stitched 
+Anarkali Gown  (Purple)</p> 
+            <p class="item-price">&#8377;1199.99</p> 
+            <button class="like-btn">Like</button> 
+            <label><input type="checkbox" name="items" 
+data-name="Georgette Semi Stitched Anarkali Gown " data
+price="1199.99">Wedding dress</label> 
+          </div> 
+        </div> 
+      </div> 
+   
+      <div class="wedding-gallery-row"> 
+        <div class="gallery-item"> 
+          <img 
+src="https://rukminim2.flixcart.com/image/832/832/xif0q/go
+ wn/4/u/g/na-free-3-4-sleeve-semi-stitched-a-1174-chiku-lf
+warthy-original-imah6pwrz8zgavaw.jpeg?q=70&crop=false" 
+alt="Wedding Dress 4"> 
+          <div class="item-details"> 
+            <p class="item-name"> Embroidered Net Semi 
+Stitched Anarkali Gown  (Beige)</p> 
+            <p class="item-price">&#8377;2132</p> 
+            <button class="like-btn">Like</button> 
+            <label><input type="checkbox" name="items" 
+data-name="semi stitched anarkali" data
+price="2132">Wedding dress</label> 
+          </div> 
+        </div> 
+        <div class="gallery-item"> 
+          <img 
+src="https://rukminim2.flixcart.com/image/832/832/xif0q/fa
+ bric/e/0/n/yes-1-6-m-semi-stitched-2-m-2-5-m-as-30107
+atsevam-original-imahahyt8xgnpefr.jpeg?q=70&crop=false" 
+alt="Wedding Dress 5"> 
+          <div class="item-details"> 
+            <p class="item-name">Semi Stitched Net/Lace 
+Gown/Anarkali Kurta & Bottom Material Embroidered, Self 
+Design</p> 
+            <p class="item-price">&#8377;3142</p> 
+            <button class="like-btn">Like</button> 
+            <label><input type="checkbox" 
+name="items"data-name="stitched anarkali kurta" data
+price="3142"> Wedding dress</label> 
+          </div> 
+        </div> 
+       </div> 
+ 
+  </section> 
+   
+  <section id="women" class="women-section"> 
+    <div class="women-gallery"> 
+      <div class="women-gallery-row"> 
+        <div class="gallery-item"> 
+          <img src="https://m.media
+amazon.com/images/I/61MwxbBTeAL._SX569_.jpg" alt="Women 
+Photo 1"> 
+          <div class="item-details"> 
+            <p class="item-name">Symbol Premium Women's 
+'Desk-to-Dinner' Fit & Flare Wrap Dress (Midi Length | 
+Stylish)</p> 
+            <p class="item-price">&#8377;712</p> 
+            <button class="like-btn">Like</button> 
+            <label><input type="checkbox" name="items" 
+data-name="premium midi" data-price="712"> Women 
+casual</label> 
+          </div> 
+        </div> 
+        <div class="gallery-item"> 
+          <img src="https://m.media
+amazon.com/images/I/6177aq1ONQL._SY550_.jpg" alt="Women 
+Photo 2"> 
+          <div class="item-details"> 
+            <p class="item-name">Max Women Knee Length 
+Dress</p> 
+            <p class="item-price">&#8377;632</p> 
+            <button class="like-btn">Like</button> 
+            <label><input type="checkbox" 
+name="items"data-name="Women knee length dress" data
+price="632">  Women casual</label> 
+          </div> 
+        </div> 
+        <div class="gallery-item"> 
+          <img src="https://m.media
+amazon.com/images/I/61+Uta4FEAL._SY550_.jpg" alt="Women 
+Photo 3"> 
+          <div class="item-details"> 
+            <p class="item-name">LITZO Western Dresses for 
+Women (L-19-20)</p> 
+            <p class="item-price">&#8377;579</p> 
+            <button class="like-btn">Like</button> 
+            <label><input type="checkbox" 
+name="items"data-name="women western dress" data
+price="579"> Women casual</label> 
+          </div> 
+        </div> 
+      </div> 
+   
+      <div class="women-gallery-row"> 
+        <div class="gallery-item"> 
+          <img src="https://m.media
+amazon.com/images/I/61ejpfQ3p9L._SY550_.jpg" alt="Women 
+Photo 4"> 
+          <div class="item-details"> 
+            <p class="item-name">GRECIILOOKS Rayon Fit and 
+Flare  Midi Dress </p> 
+            <p class="item-price">&#8377;499</p> 
+            <button class="like-btn">Like</button> 
+            <label><input type="checkbox" name="items" 
+data-name="rayon fit/flare midi dress" data-price="499">  
+Women casual</label> 
+          </div> 
+        </div> 
+        <div class="gallery-item"> 
+          <img src="https://m.media
+amazon.com/images/I/61+zO6fqO5L._SX679_.jpg" alt="Women 
+Photo 5"> 
+          <div class="item-details"> 
+            <p class="item-name">Fashion2wear Women Full 
+Length Dress</p> 
+            <p class="item-price">&#8377;445</p> 
+            <button class="like-btn">Like</button> 
+            <label><input type="checkbox" name="items" 
+data-name="Women length dress" data-price="445">  Women 
+casual</label> 
+          </div> 
+        </div> 
+         
+      </div> 
+    </div> 
+  </section> 
+  <section id="accessories" class="accessories-section"> 
+    <h2>Accessories</h2> 
+    <div class="accessories-gallery"> 
+      <div class="gallery-item"> 
+        <img src="https://m.media
+amazon.com/images/I/41xtln2kGNL._AC_UL480_FMwebp_QL65_.jpg
+ " alt="Accessory 1" style="margin-top: 50%;"> 
+        <div class="item-details"> 
+          <p class="item-name">VINCENT CHASE EYEWEAR</p> 
+          <p class="item-price">699</p> 
+          <button class="like-btn">Like</button> 
+          <label><input type="checkbox" name="items" data
+name="Eye wear" data-price="699"> Accessories</label> 
+        </div> 
+      </div> 
+      <div class="gallery-item"> 
+        <img src="https://m.media
+amazon.com/images/I/71jCRAMYlRL._AC_UL480_FMwebp_QL65_.jpg
+ " alt="Accessory 2"> 
+        <div class="item-details"> 
+          <p class="item-name">Oliver Black Leather Wallet 
+for Men, 6 Card Slot</p> 
+          <p class="item-price">599.99</p> 
+          <button class="like-btn">Like</button> 
+          <label><input type="checkbox" name="items"data
+name="wallet" data-price="599.99"> Accessories</label> 
+        </div> 
+      </div> 
+      <div class="gallery-item"> 
+        <img src="https://m.media
+amazon.com/images/I/71Vx928Yx2L._AC_UL480_FMwebp_QL65_.jpg
+ " alt="Accessory 3"> 
+        <div class="item-details"> 
+          <p class="item-name">Noise ColorFit Ultra 3 
+Bluetooth Calling Smart Watch</p> 
+          <p class="item-price">2599</p> 
+          <button class="like-btn">Like</button> 
+          <label><input type="checkbox" name="items"data
+name="smart watch" data-price="2599"> Accessories</label> 
+        </div> 
+      </div> 
+      <div class="gallery-item"> 
+        <img src="https://m.media
+amazon.com/images/I/71CdPI4hxHL._AC_UL480_FMwebp_QL65_.jpg
+ " alt="Accessory 4"> 
+        <div class="item-details"> 
+          <p class="item-name">Nylon fabric Belt for 
+Men</p> 
+          <p class="item-price">279</p> 
+          <button class="like-btn">Like</button> 
+          <label><input type="checkbox" name="items" data
+name="belt" data-price="279">Accessories</label> 
+        </div> 
+      </div> 
+      <div class="gallery-item"> 
+        <img src="https://m.media
+amazon.com/images/I/71Raw8VUk5L._SY575_.jpg" 
+alt="Accessory 5"> 
+        <div class="item-details"> 
+          <p class="item-name">INOVERA (LABEL) Women 
+Inovera Faux Leather Handbags</p> 
+          <p class="item-price">1349</p> 
+          <button class="like-btn">Like</button> 
+          <label><input type="checkbox" name="items"data
+name="Handbags" data-price="1349"> Accessories</label> 
+        </div> 
+      </div> 
+    </div> 
+  </section> 
+  <section id="casuals" class="casuals-section"> 
+    <h2>Casuals</h2> 
+    <div class="casuals-gallery"> 
+      <div class="gallery-item"> 
+        <img 
+src="https://cdn.media.amplience.net/i/mrpricegroup/01_101
+ 671989_SI_00" alt="Casual 1"> 
+        <div class="item-details"> 
+          <p class="item-name">Relaxed T-shirt</p> 
+          <p class="item-price">999</p> 
+          <button class="like-btn">Like</button> 
+          <label><input type="checkbox" name="items" data
+name="relaxed T shirt" data-price="999"> casuals</label> 
+        </div>      </div> 
+      <div class="gallery-item"> 
+        <img style="margin-top:30%" 
+src="data:image/jpeg;base64,/ /9k=" alt="Casual 2" > 
+        <div class="item-details"> 
+          <p class="item-name">Denim Jeans</p> 
+          <p class="item-price">999</p> 
+          <button class="like-btn">Like</button> 
+          <label><input type="checkbox" name="items" data
+name="Denim jeans" data-price="999">casuals</label> 
+        </div> 
+      </div> 
+      <div class="gallery-item"> 
+        <img src="https://m.media
+amazon.com/images/I/613G0VfIOjL._AC_UL480_FMwebp_QL65_.jpg
+ " style="margin-top:25%" alt="Casual 3"> 
+        <div class="item-details"> 
+          <p class="item-name">Sporty Hoodie</p> 
+          <p class="item-price">799</p> 
+          <button class="like-btn">Like</button> 
+          <label><input type="checkbox" name="items"data
+name="sporty hoodie" data-price="799">casuals</label> 
+        </div> 
+      </div> 
+      <div class="gallery-item"> 
+        <img src="https://m.media
+amazon.com/images/I/71dlxS7UBWS._AC_UL480_FMwebp_QL65_.jpg
+ " style="margin-top: 50% "alt="Casual 4"> 
+        <div class="item-details"> 
+          <p class="item-name">Casual Sneakers</p> 
+          <p class="item-price">849</p> 
+          <button class="like-btn">Like</button> 
+          <label><input type="checkbox" name="items" data
+name="Casual sneakers" data-price="849">casuals</label> 
+        </div> 
+      </div> 
+      <div class="gallery-item"> 
+        <img src="https://m.media
+amazon.com/images/I/71FMLN8soyL._AC_UL480_FMwebp_QL65_.jpg
+ " alt="Casual 5"> 
+        <div class="item-details"> 
+          <p class="item-name">Plaid Shirt</p> 
+          <p class="item-price">1499</p> 
+          <button class="like-btn">Like</button> 
+          <label><input type="checkbox" name="items"data
+name="Plaid Shirt " data-price="1499"> casuals</label> 
+        </div> 
+      </div> 
+    </div> 
+  </section> 
+   
+  <section id="kids" class="kids-section"> 
+    <h2>Kids Clothing</h2> 
+    <div class="kids-gallery"> 
+      <div class="gallery-item"> 
+        <img src="https://m.media-amazon.com/images/I/61
+wvyLbqEL._AC_UL480_FMwebp_QL65_.jpg" alt="Kid 1"> 
+        <div class="item-details"> 
+          <p class="item-name">Cartoon T-shirt</p> 
+          <p class="item-price">595</p> 
+          <button class="like-btn">Like</button> 
+          <label><input type="checkbox" name="items" data
+name="cartooon T shirt" data-price="595"> Kids</label> 
+        </div> 
+      </div> 
+      <div class="gallery-item"> 
+        <img src="https://m.media
+amazon.com/images/I/910XR+8lk3L._AC_UL480_FMwebp_QL65_.jpg
+ " alt="Kid 2"> 
+        <div class="item-details"> 
+          <p class="item-name">Boys Jeans</p> 
+          <p class="item-price">699</p> 
+          <button class="like-btn">Like</button> 
+          <label><input type="checkbox" name="items" data
+name="Boys jeans" data-price="699">  Kids</label> 
+        </div> 
+      </div> 
+      <div class="gallery-item"> 
+        <img src="https://m.media
+amazon.com/images/I/51R+Uhz9zRL._AC_UL480_FMwebp_QL65_.jpg
+ " alt="Kid 3"> 
+        <div class="item-details"> 
+          <p class="item-name">Girls Dress</p> 
+          <p class="item-price">608</p> 
+          <button class="like-btn">Like</button> 
+          <label><input type="checkbox" name="items"data
+name="Girls dress" data-price="608">  Kids</label> 
+        </div> 
+      </div> 
+      <div class="gallery-item"> 
+        <img src="https://m.media
+amazon.com/images/I/51YNChreLQL._AC_UL480_FMwebp_QL65_.jpg
+ " alt="Kid 4"> 
+        <div class="item-details"> 
+          <p class="item-name">Kids Hoodie</p> 
+          <p class="item-price">359</p> 
+          <button class="like-btn">Like</button> 
+          <label> 
+            <input type="checkbox" name="items" data
+name="Kids hoodie" data-price="445"> Kids 
+          </label> 
+           
+        </div> 
+      </div> 
+      <div class="gallery-item"> 
+        <img src="https://m.media
+amazon.com/images/I/51bhk5+oc5L._AC_UL480_FMwebp_QL65_.jpg
+ " alt="Kid 5"> 
+        <div class="item-details"> 
+          <p class="item-name">Little Sneakers</p> 
+          <p class="item-price">699</p> 
+          <button class="like-btn">Like</button> 
+          <label><input type="checkbox" name="items" data
+name="Little sneakers" data-price="699"> Kids</label> 
+        </div> 
+      </div> 
+    </div> 
+  </section> 
+  <section id="contact" class="contact-section"> 
+    <h2>Contact Us</h2> 
+    <div class="contact-details"> 
+        <div class="contact-item"> 
+          <h3>Instagram</h3> 
+          <a 
+href="https://www.instagram.com/your_instagram_id" 
+target="_blank"> 
+            <img src="https://www.pngkey.com/png/full/792
+7927620_instagram-vector-png.png" alt="Instagram" 
+width="40" height="40"> 
+            @_krubiseclothing_8413 
+          </a> 
+        </div> 
+        <div class="contact-item"> 
+          <h3>Email</h3> 
+          <a href="mailto:your_email@example.com"> 
+            <img src="data:image/jpeg;base64,/9j9k="> 
+          +918807294424</p> 
+        </div> 
+        <div class="contact-item"> 
+          <h3>Address</h3> 
+          <p>23/2 bharani 
+nagar,amaravathypalayam,Tirupur,638111</p> 
+        </div> 
+      </div> 
+    </section> 
+  </section> 
+</body> 
+</html> 
+<style>    .payment { 
+  text-align: center; 
+  margin: 40px 0; 
+} 
+ 
+.payment button { 
+  padding: 15px 30px; 
+  background: #28a745; 
+  color: white; 
+  border: none; 
+  font-size: 18px; 
+  border-radius: 8px; 
+  cursor: pointer; 
+} 
+ 
+.payment button:hover { 
+  background: #218838; 
+} 
+</style> 
+   
+</head> 
+<body> 
+ 
+<form onsubmit="return submitSelection()"> 
+  <div class="container"> 
+       
+ 
+    <!-- Payment Button --> 
+    <div class="payment"> 
+      <button type="submit">Proceed to Payment</button> 
+    </div> 
+  </div> 
+</form> 
+ 
+<footer> 
+  <p>&copy; 2025 krubise Clothings</p> 
+</footer> 
+<script> 
+ 
+ 
+  function submitSelection() { 
+    const selectedItems = 
+Array.from(document.querySelectorAll('input[name="items"]:
+ checked')) 
+      .map(item => ({ 
+        name: item.getAttribute('data-name'), 
+        price: parseFloat(item.getAttribute('data-price')) 
+      })); 
+ 
+    if (selectedItems.length === 0) { 
+      alert("Please select at least one item to 
+proceed."); 
+      return false; 
+    } 
+ 
+    localStorage.setItem('selectedItems', 
+JSON.stringify(selectedItems)); 
+    window.location.href = "payment.html"; // Make sure 
+this file exists 
+    return false; 
+  } 
+</script> 
+</body> 
+</html> 
