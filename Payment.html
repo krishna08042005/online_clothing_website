@@ -1,0 +1,168 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+  <meta charset="UTF-8"> 
+  <title>Payment Summary</title> 
+  <style> 
+    body { 
+      font-family: 'Arial', sans-serif; 
+      padding: 30px; 
+      background: linear-gradient(45deg, #ff6f61, #6a1b9a, 
+#0288d1, #43a047); /* Multi-color gradient */ 
+      background-size: 400% 400%; 
+      animation: gradientAnimation 10s ease infinite; 
+      display: flex; 
+      justify-content: center; 
+      align-items: center; 
+      min-height: 100vh; 
+      margin: 0; 
+    } 
+ 
+    @keyframes gradientAnimation { 
+      0% { 
+        background-position: 0% 50%; 
+      } 
+      50% { 
+        background-position: 100% 50%; 
+      } 
+      100% { 
+        background-position: 0% 50%; 
+      } 
+    } 
+ 
+    .success-message { 
+      display: none; 
+      color: white; 
+      font-weight: bold; 
+      font-size: 20px; 
+      background-color: #28a745; 
+      padding: 10px; 
+      border-radius: 5px; 
+      text-align: center; 
+      position: absolute; 
+      top: 20px; 
+      left: 50%; 
+      transform: translateX(-50%); 
+      opacity: 0; 
+      animation: showSuccessMessage 1s ease-out forwards; 
+    } 
+ 
+    @keyframes showSuccessMessage { 
+      0% { 
+        opacity: 0; 
+        transform: translateX(-50%) translateY(-20px); 
+      } 
+      100% { 
+        opacity: 1; 
+        transform: translateX(-50%) translateY(0); 
+      } 
+    } 
+ 
+    h2 { 
+      text-align: center; 
+      color: #fff; 
+      font-size: 24px; 
+    } 
+ 
+    .summary { 
+      max-width: 500px; 
+      margin: 0 auto; 
+      background: rgba(255, 255, 255, 0.9); /* Slight 
+transparency */ 
+      padding: 30px; 
+      border-radius: 8px; 
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+    } 
+ 
+    .item { 
+      display: flex; 
+      justify-content: space-between; 
+      margin-bottom: 15px; 
+      border-bottom: 1px solid #ddd; 
+      padding-bottom: 10px; 
+    } 
+ 
+    .total { 
+      text-align: right; 
+      font-weight: bold; 
+      margin-top: 20px; 
+      font-size: 18px; 
+    } 
+ 
+    .pay-btn { 
+      display: block; 
+      margin: 30px auto 10px; 
+      padding: 12px 25px; 
+      background-color: #28a745; 
+      color: white; 
+      border: none; 
+      border-radius: 5px; 
+      font-size: 18px; 
+      cursor: pointer; 
+      transition: background-color 0.3s ease; 
+    } 
+ 
+    .pay-btn:hover { 
+      background-color: #218838; 
+    } 
+ 
+    .pay-btn:active { 
+      transform: scale(0.98); 
+    } 
+ 
+    .pay-btn:focus { 
+      outline: none; 
+    } 
+ 
+    .item span { 
+      font-size: 16px; 
+      color: #555; 
+    } 
+ 
+    .total span { 
+      font-size: 20px; 
+      color: #333; 
+    } 
+  </style> 
+</head> 
+<body> 
+ 
+  <div class="success-message" id="successMessage">✅ Payment 
+Successful!</div> 
+ 
+  <div class="summary"> 
+    <h2 style="color:black"> Selected Items</h2> 
+    <div id="itemsList"></div> 
+    <div class="total" id="totalAmount"></div> 
+ 
+    <button class="pay-btn" onclick="handlePayment()">Pay 
+Now</button> 
+  </div> 
+ 
+  <script> 
+    const items = 
+JSON.parse(localStorage.getItem('selectedItems')) || []; 
+    const itemsList = document.getElementById('itemsList'); 
+    const totalAmount = document.getElementById('totalAmount'); 
+ 
+    let total = 0; 
+    items.forEach(item => { 
+      const div = document.createElement('div'); 
+      div.className = 'item'; 
+      div.innerHTML = 
+`<span>${item.name}</span><span>₹${item.price.toFixed(2)}</span>
+ `; 
+      itemsList.appendChild(div); 
+      total += item.price; 
+    }); 
+ 
+    totalAmount.innerText = `Total: ₹${total.toFixed(2)}`; 
+ 
+    function handlePayment() { 
+      const msg = document.getElementById("successMessage"); 
+      msg.style.display = "block"; 
+    } 
+  </script> 
+ 
+</body> 
+</html> 
